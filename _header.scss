@@ -19,26 +19,5 @@ header{
         color: #333;
     }
 
-    .menu-bar{
-        display: none;
-
-        &:checked ~ .navbar{
-            display: initial;
-        }
-    }
-
-
-    label{
-        font-size: 20px;
-        color: #333;
-        cursor: pointer;
-        display: none;
-
-        @media screen and (max-width:991px) {
-            display: initial;
-        }
-    }
-
-
-
+    
 }
