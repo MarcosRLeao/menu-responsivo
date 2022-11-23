@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  min-height: 100vh;
+  background-color: #e7e7e7;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 0 1%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  position: relative;
+}
+@media screen and (max-width: 991px) {
+  header {
+    padding: 20px;
+  }
+}
+header .logo {
+  font-weight: 700;
+  font-size: 25px;
+  color: #333;
+}
+header .menu-bar {
+  display: none;
+}
+header .menu-bar:checked ~ .navbar {
+  display: initial;
+}
+header label {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  header label {
+    display: initial;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+}
+.navbar ul {
+  list-style: none;
+}
+.navbar ul li {
+  position: relative;
+  float: left;
+}
+@media screen and (max-width: 991px) {
+  .navbar ul li {
+    width: 100%;
+  }
+}
+.navbar ul li a {
+  font-size: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #333;
+  display: block;
+  text-decoration: none;
+}
+.navbar ul li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+.navbar ul li ul {
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  width: 200px;
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .navbar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+}
+.navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 991px) {
+  .navbar ul li ul li {
+    background-color: #ccc;
+  }
+}
+.navbar ul li ul li ul {
+  left: 200px;
+  top: 0;
+}
+@media screen and (max-width: 991px) {
+  .navbar ul li ul li ul {
+    width: 100%;
+    left: 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .navbar ul li ul li ul li {
+    background-color: #eee;
+  }
+}
+@media screen and (min-width: 992px) {
+  .navbar ul li:hover > ul {
+    display: initial;
+  }
+}
+@media screen and (max-width: 991px) {
+  .navbar ul li:focus-within > ul {
+    display: initial;
+  }
+}/*# sourceMappingURL=style.css.map */
