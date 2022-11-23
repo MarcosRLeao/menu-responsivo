@@ -121,7 +121,7 @@ header label {
   }
 }
 @media screen and (min-width: 992px) {
-  .navbar ul li:hover > ul {
+  .navbar ul li:focus-within > ul, .navbar ul li:hover > ul {
     display: initial;
   }
 }

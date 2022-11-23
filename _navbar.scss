@@ -74,6 +74,7 @@ $component-name: "navbar";
       }
 
       @media screen and (min-width: 992px) {
+        &:focus-within > ul,
         &:hover > ul {
           display: initial;
         }
